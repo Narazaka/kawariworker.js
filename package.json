@@ -9,6 +9,7 @@
     "ukagaka"
   ],
   "main": "./kawariworker-fork.js",
+  "browser": "./kawariworker-webworker-all.js",
   "scripts": {
     "build": "npm run build-fork && npm run build-webworker && npm run build-webworker-all",
     "build-fork": "makefork Kawari kawari kawari.js > kawariworker-fork.js",
