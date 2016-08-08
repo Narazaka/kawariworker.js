@@ -1,6 +1,20 @@
 KawariWorker - WebWorker SHIORI subsystem KAWARI
 ==========================
 
+Install
+--------------------------
+```
+npm install kawariworker.js
+```
+
+Usage
+--------------------------
+node.js
+```
+var KawariWorker = require("kawariworker.js");
+var kawariWorker = new KawariWorker();
+```
+
 License
 --------------------------
 
