@@ -14,7 +14,9 @@
     "build": "npm run build-fork && npm run build-webworker && npm run build-webworker-all",
     "build-fork": "makefork Kawari kawari kawari.js > kawariworker-fork.js",
     "build-webworker": "makewebworker Kawari kawari node_modules/kawari.js/kawari.js > kawariworker-webworker.js",
-    "build-webworker-all": "makewebworker all Kawari kawari node_modules/kawari.js/kawari.js > kawariworker-webworker-all.js"
+    "build-webworker-all": "makewebworker all Kawari kawari node_modules/kawari.js/kawari.js > kawariworker-webworker-all.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "bluebird": "^3.4.1",
@@ -24,7 +26,8 @@
     "nativeshiori": "^2.3.0",
     "shioriloader": "^1.0.1",
     "single-file-worker": "^1.0.0",
-    "worker-client-server": "^0.3.1"
+    "worker-client-server": "^0.3.1",
+    "snyk": "^1.316.2"
   },
   "author": {
     "name": "narazaka",
@@ -34,5 +37,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/Ikagaka/kawariworker.js.git"
-  }
+  },
+  "snyk": true
 }
